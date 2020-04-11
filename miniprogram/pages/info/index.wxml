@@ -1,0 +1,90 @@
+<view class='head'>
+  <view class="fistIcon">
+    <image class="logo" src="../../images/user-unlogin.png"></image>
+    <text>封面头像</text>
+    <image class="changeIcon" src="../../images/change_icon.png"></image>
+  </view>
+  <view class="photos">
+    <view class="title">相册
+      <text>(最多8张)</text>
+    </view>
+    <view class="images">
+      <view class="img">
+        <image class="addImageBtn" src="../../images/add_images_btn.png"></image>
+        <image class="removeImageBtn" src="../../images/remove_images_btn.png"></image>
+        <image class="photo" src="http://imgs.intramirror.com/upload/139ce188-e50d-4f36-9083-0f9461d129c3?x-oss-process=image/resize,m_pad,w_560,h_720/quality,Q_100/auto-orient,0/format,jpg"></image>
+      </view>
+      <view class="img">
+        <image class="addImageBtn" src="../../images/add_images_btn.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="baseInfo">
+  <view class="infoTitle">基本资料</view>
+  <view class="infoCell">
+    <text class="left">昵称</text>
+    <input class="nickName right" placeholder="请输入您的昵称" placeholder-style='text-align: right;color:#999'></input>
+    <image class="right_gay" src="../../images/right_gay.png"></image>
+  </view>
+  <view class="infoCell">
+    <text class="left">性别</text>
+    <text class="right">女</text>
+  </view>
+
+  <view class="infoCell">
+    <text class="left">生日</text>
+    <picker mode="date" value="{{birthday}}" start="1980-01-01" end="2010-01-01" bindchange="bindDateChange">
+      <view class="birthday">
+        {{birthday}}
+      </view>
+      <image class="right_gay" src="../../images/right_gay.png"></image>
+    </picker>
+  </view>
+
+
+  <view class="infoCell">
+    <text class="left">身高</text>
+    <picker value="{{height}}" range="{{heightForPerson}}" bindchange="bindHeightChange">
+      <view class="birthday">
+        {{heightForPerson[height]}}
+      </view>
+      <image class="right_gay" src="../../images/right_gay.png"></image>
+    </picker>
+  </view>
+
+  <view class="infoCell">
+    <text class="left">工作地区</text>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <view class="birthday">
+        {{region[0]}},{{region[1]}},{{region[2]}}
+      </view>
+      <image class="right_gay" src="../../images/right_gay.png"></image>
+    </picker>
+  </view>
+
+
+  <view class="infoCell bottom">
+    <text class="left">内心独白</text>
+    <input class="nickName right" placeholder="介绍一下你自己吧~" placeholder-style='text-align: right;color:#999'></input>
+    <image class="right_gay" src="../../images/right_gay.png"></image>
+  </view>
+
+</view>
+
+<view class="tabItemView" id="tabItemView">
+  <view class="item {{tabItemViewFix?'itemFix':''}}">
+    <view catchtap="changeItemData" data-id="0" class="item_title left">
+      <text>个人信息</text>
+      <view wx:if='{{tabItemAt==0}}' class="line"></view>
+    </view>
+    <view catchtap="changeItemData" data-id="1" class="item_title right">
+      <text>择偶条件</text>
+      <view wx:if='{{tabItemAt==1}}' class="line"></view>
+    </view>
+
+    <view class="descMessege">完善相亲信息，能大幅度提升曝光度和匹配度哦~</view>
+  </view>
+  <info-items class="{{tabItemViewFix?'itemFixCell':''}}" isSelf="{{tabItemAt==0}}"></info-items>
+</view>

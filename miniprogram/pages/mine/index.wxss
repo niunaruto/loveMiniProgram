@@ -1,0 +1,28 @@
+/* pages/userConsole/userConsole.wxss */
+
+
+
+.head{
+  display: flex;
+  flex-direction: column;
+  height: 600rpx;
+  align-items: center;
+}
+.head image{
+  height: 100%;
+  width: 100%;
+  background:rebeccapurple;
+}
+.listItem{
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  color: #333;
+  padding-left: 30rpx;
+  line-height: 100rpx;
+}
+.listItem .cell{
+  height: 100rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+

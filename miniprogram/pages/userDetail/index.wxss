@@ -1,0 +1,217 @@
+.detail {
+  position: relative;
+  display: flex;
+}
+
+.backIcon {
+  position: fixed;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 100;
+  left: 20rpx;
+}
+
+swiper {
+  height: 750rpx;
+  width: 100%;
+}
+.report{
+  z-index: 10;
+  position: absolute;
+  left: 30rpx;
+  top: 700rpx;
+  color: white;
+  font-size: 25rpx;
+  width: 100rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  background-color: rgba(187, 219, 240, 0.25);
+}
+
+.swiper-item {
+  height: 750rpx;
+  width: 100%;
+}
+
+.infoView {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  min-height: 1000rpx;
+  width: 100%;
+  top: 750rpx;
+  border-radius: 30rpx 30rpx 00rpx 0rpx;
+}
+
+.infoView .head {
+  display: flex;
+  padding: 30rpx;
+  position: relative;
+  height: 120rpx;
+}
+/* .head .lickUserBtn{
+  background-color: orange;
+  border-radius: 20rpx;
+height: 30rpx;
+color: white;
+margin-left: 20rpx;
+padding: 5rpx 15rpx 5rpx 15rpx;
+font-size: 20rpx;
+line-height: 30rpx;
+} */
+.head .nickname {
+  font-size: 40rpx;
+  color: #b98c6f;
+  
+}
+
+.head .authStatus {
+  background: linear-gradient(227deg, rgb(126, 170, 206) 0%, rgb(34, 23, 175) 100%);
+}
+
+.head .tel {
+  background: linear-gradient(135deg, rgba(236, 91, 112, 1) 0%, rgba(212, 46, 61, 1) 100%);
+}
+
+.head .bottom {
+  position: absolute;
+  top: 100rpx;
+  align-items: center;
+  font-size: 18rpx;
+  color: white;
+}
+
+.head .city {
+  background-color: orange;
+}
+
+.head .age {
+  left: 120rpx;
+  background-color: rgba(0, 153, 255, 0.719);
+}
+
+.head .sex {
+  left: 180rpx;
+  background-color: palevioletred;
+}
+
+.head .idNum {
+  left: 30rpx;
+  top: 150rpx;
+  background-color: #efefef;
+  color: #999;
+}
+
+.head .renZhenView {
+  position: absolute;
+  right: 30rpx;
+  color: rgba(0, 153, 255, 1);
+  background-color: rgba(187, 219, 240, 0.445);
+  padding: 3rpx 10rpx 3rpx 10rpx;
+  border-radius: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 120rpx;
+  text-align: center;
+  font-size: 24rpx;
+  top: 50rpx;
+}
+
+.introduce {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  position: relative;
+}
+
+
+.introduce .title {
+  font-size: 30rpx;
+  color: #000;
+}
+
+.introduce .info {
+  font-size: 25rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #999;
+  text-align: center;
+  font-size: 25rpx;
+  margin-top: 10rpx;
+}
+
+.tags text {
+  background-color: #efefef;
+  border-radius: 30rpx;
+  height: 30rpx;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  margin-right: 10rpx;
+  line-height: 30rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+
+.bottom .items {
+  margin-right: 20rpx;
+  padding: 3rpx 10rpx 3rpx 10rpx;
+  border-radius: 5rpx;
+}
+
+.bottomView {
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  color: white;
+  font-size: 25rpx;
+  padding-top: 10rpx;
+}
+
+.bottomView .textI {
+  width: 80%;
+  height: 80rpx;
+  margin-right: 10%;
+  background: linear-gradient(135deg, rgba(236, 91, 112, 1) 0%, rgba(212, 46, 61, 1) 100%);
+  border-radius: 40rpx;
+}
+
+.tips {
+  font-size: 16rpx;
+  color: #efefef;
+}
+
+.bottomView button {
+  width: 80%;
+  height: 80rpx;
+  margin-right: 10%;
+  border-radius: 40rpx;
+  border: 1rpx solid rgba(212, 46, 61, 1);
+  background: linear-gradient(135deg, rgba(236, 91, 112, 1) 0%, rgba(212, 46, 61, 1) 100%);
+}
+
+button text {
+  font-size: 30rpx;
+  color: white;
+  font-weight: bold;
+}
+
+.nickKnow {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 20rpx !important;
+  width: 200rpx;
+  color: #999 !important;
+  background: #efefef;
+  border-radius: 30rpx;
+  text-align: center;
+}

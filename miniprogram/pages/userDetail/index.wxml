@@ -1,0 +1,58 @@
+<view class="detail">
+  <image catchtap="backClick" class="backIcon" style="top:{{menuRect.top+4}}px;" src="../../images/app_back.png"></image>
+  <swiper indicator-dots="{{userModel.photoAlbum.length>1}}" easing-function="linear" circular="true" autoplay="true"  interval="8000">
+    <block wx:for="{{userModel.photoAlbum}}" wx:key="*this">
+      <swiper-item>
+        <image catchtap="previewImage" data-url="{{item.url}}" lazy-load="" mode="aspectFill" class="swiper-item" src="{{item.url}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+      <view catchtap="reportClick" class="report">举报</view>
+  <view class="infoView">
+    <view class="head">
+          <text class="nickname">{{userModel.nickname}}</text>
+    <view class="bottom">
+      <text class="city items">{{userModel.city}}</text>
+      <text class="age items">{{userModel.age}}岁</text>
+      <text class="sex items">{{userModel.gender==2?'女':'男'}}</text>
+      <text wx:if="{{userModel.realname.authStatus=='pass'}}" class="authStatus items">已实名</text>
+      <text wx:if="{{userModel.mobile}}" class="tel items">联系方式已认证</text>
+    </view>
+      <text catchlongtap="copyIdNum" class="idNum bottom">ID:{{userModel._id}} </text>
+      <view  class="renZhenView" catchtap="userNeedKnow">
+        交友须知
+      </view>
+    </view>
+    <view class="introduce">
+      <text class="title">内心独白</text>
+      <text class="info">{{userModel.introduce}}</text>
+    </view>
+
+    <view class="introduce">
+      <text class="title">个人资料</text>
+      <view class="tags">
+        <text wx:key="{{item}}" wx:for="{{userModel.baseInfoTags.one}}">{{item}}</text>
+        <text wx:key="{{item}}" wx:for="{{userModel.baseInfoTags.two}}">{{item}}</text>
+      </view>
+    </view>
+
+    <view class="introduce" style="margin-bottom:100rpx">
+      <text class="title">择偶标准</text>
+      <view class="tags">
+        <text wx:key="{{item}}" wx:for="{{userModel.matchInfoTags}}">{{item}}</text>
+      </view>
+    </view>
+
+
+  </view>
+ 
+   <view class="bottomView" >
+    <button  open-type="contact" send-message-title="{{userDetail.nickname}}" send-message-img="{{userDetail.avatar.url}}" send-message-path="/pages/userDetail/index?uid={{uid}}" bindcontact='contact' show-message-card plain bindcontact="handleContact">
+    <text>马上联系Ta</text>
+    </button>
+  </view>
+</view>
+
+
+
+

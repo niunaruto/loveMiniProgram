@@ -1,0 +1,27 @@
+.list{
+  display: flex;
+  height: 100rpx;
+  border-bottom: 1rpx solid #efefef;
+  line-height: 100rpx;
+  color: #333;
+  font-size: 26rpx;
+  padding-left: 30rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.list image{
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 30rpx;
+}
+.commintClick{
+  margin-top: 80rpx;
+  text-align: center;
+  height: 100rpx;
+  background-color: #000;
+  color: wheat;
+  width: 70%;
+  line-height: 100rpx;
+  margin-left: 15%;
+  margin-bottom: 120rpx;
+}

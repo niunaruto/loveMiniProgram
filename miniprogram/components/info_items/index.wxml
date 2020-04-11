@@ -1,0 +1,279 @@
+<view class="list">
+  <block wx:if='{{isSelf}}'>
+    <view class="infoCell">
+      <text class="left">月收入</text>
+      <picker value="{{earningIndex}}" range="{{earningArray}}" bindchange="bindEarningChange">
+        <view class="birthday">
+          {{earningArray[earningIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+    <view class="infoCell">
+      <text class="left">职业</text>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="birthday">
+          {{multiArray[0][multiIndex[0]]}}
+          <text wx:if='{{multiArray[1][multiIndex[1]]}}'>-{{multiArray[1][multiIndex[1]]}}</text>
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+    <view class="infoCell">
+      <text class="left">学历</text>
+      <picker value="{{schoolAgeIndex}}" range="{{schoolAge}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{schoolAge[schoolAgeIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+    <view class="infoCell">
+      <text class="left">婚姻状态</text>
+      <picker value="{{marriageIndex}}" range="{{marriageArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{marriageArray[marriageIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+    <view class="infoCell">
+      <text class="left">有没有小孩</text>
+      <picker value="{{hasBabyIndex}}" range="{{hasBabyArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{hasBabyArray[hasBabyIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">是否要小孩</text>
+      <picker value="{{needBabyIndex}}" range="{{needBabyArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{needBabyArray[needBabyIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+    <view class="infoCell">
+      <text class="left">住房情况</text>
+      <picker value="{{houseIndex}}" range="{{houseArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{houseArray[houseIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">买车情况</text>
+      <picker value="{{carIndex}}" range="{{carArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{carArray[carIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+    <view class="infoCell">
+      <text class="left">籍贯</text>
+      <picker mode="region" bindchange="bindNativePlaceChange" value="{{nativePlace}}">
+        <view class="birthday">
+          {{nativePlace[0]}},{{nativePlace[1]}},{{nativePlace[2]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+
+    <view class="infoCell">
+      <text class="left">体重</text>
+      <picker value="{{weight}}" range="{{weightForPerson}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{weightForPerson[weight]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">体型</text>
+      <picker value="{{bodilyIndex}}" range="{{bodilyForm}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{bodilyForm[bodilyIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">民族</text>
+      <picker value="{{nationalityIndex}}" range="{{nationalityArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{nationalityArray[nationalityIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">何时结婚</text>
+      <picker value="{{whatTimeMarryIndex}}" range="{{whatTimeMarryArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{whatTimeMarryArray[whatTimeMarryIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">是否吸烟</text>
+      <picker value="{{smokeIndex}}" range="{{smokeArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{smokeArray[smokeIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+    <view class="infoCell">
+      <text class="left">是否喝酒</text>
+      <picker value="{{drinkIndex}}" range="{{drinkArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{drinkArray[drinkIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+  </block>
+  <block wx:else>
+  <view class="infoCell">
+      <text class="left">年龄</text>
+      <picker value="{{earningIndex}}" range="{{earningArray}}" bindchange="bindEarningChange">
+        <view class="birthday">
+          {{earningArray[earningIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+    <view class="infoCell">
+      <text class="left">身高</text>
+      <picker value="{{earningIndex}}" range="{{earningArray}}" bindchange="bindEarningChange">
+        <view class="birthday">
+          {{earningArray[earningIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+    <view class="infoCell">
+      <text class="left">月收入</text>
+      <picker value="{{earningIndex}}" range="{{earningArray}}" bindchange="bindEarningChange">
+        <view class="birthday">
+          {{earningArray[earningIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+    <view class="infoCell">
+      <text class="left">学历</text>
+      <picker value="{{schoolAgeIndex}}" range="{{schoolAge}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{schoolAge[schoolAgeIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+    <view class="infoCell">
+      <text class="left">婚姻状态</text>
+      <picker value="{{marriageIndex}}" range="{{marriageArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{marriageArray[marriageIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">体型</text>
+      <picker value="{{bodilyIndex}}" range="{{bodilyForm}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{bodilyForm[bodilyIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+       <view class="infoCell">
+      <text class="left">工作地区</text>
+      <picker mode="region" bindchange="bindNativePlaceChange" value="{{nativePlace}}">
+        <view class="birthday">
+          {{nativePlace[0]}},{{nativePlace[1]}},{{nativePlace[2]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+  <view class="infoCell">
+      <text class="left">有没有小孩</text>
+      <picker value="{{hasBabyIndex}}" range="{{hasBabyArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{hasBabyArray[hasBabyIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">是否要小孩</text>
+      <picker value="{{needBabyIndex}}" range="{{needBabyArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{needBabyArray[needBabyIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+  <view class="infoCell">
+      <text class="left">是否吸烟</text>
+      <picker value="{{smokeIndex}}" range="{{smokeArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{smokeArray[smokeIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+    <view class="infoCell">
+      <text class="left">是否喝酒</text>
+      <picker value="{{drinkIndex}}" range="{{drinkArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{drinkArray[drinkIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+
+
+    <view class="infoCell">
+      <text class="left">有无照片</text>
+      <picker value="{{drinkIndex}}" range="{{drinkArray}}" bindchange="bindHeightChange">
+        <view class="birthday">
+          {{drinkArray[drinkIndex]}}
+        </view>
+        <image class="right_gay" src="../../images/right_gay.png"></image>
+      </picker>
+    </view>
+  </block>
+</view>

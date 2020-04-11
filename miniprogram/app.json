@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/index",
+    "pages/userNeedKnow/index",
+    "pages/plaza/index",
+    "pages/userDetail/index",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/info/index",
+    "pages/plazaDetail/index",
+    "pages/report/index"
+  ],
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "white",
+    "color": "#666666",
+    "selectedColor": "#222222",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "/images/tabBar_01_nom.png",
+        "selectedIconPath": "/images/tabBar_01_sec.png"
+      },
+      {
+        "pagePath": "pages/plaza/index",
+        "text": "广场",
+        "iconPath": "/images/tabBar_02_nom.png",
+        "selectedIconPath": "/images/tabBar_02_sec.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "/images/tabBar_03_nom.png",
+        "selectedIconPath": "/images/tabBar_03_sec.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

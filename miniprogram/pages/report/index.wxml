@@ -1,0 +1,8 @@
+<view class='list' wx:for='{{list}}' catchtap="itemSlected" data-item="{{item}}" wx:key='{{item}}'>
+  <text style="">{{item.title}}</text>
+  <image wx:if='{{item.selected}}' src="../../images/selected.png"></image>
+</view>
+
+<view catchtap="commintClick" class="commintClick">提交</view>
+
+<ad unit-id="adunit-b4a06dc638ec7d48"></ad>

@@ -1,0 +1,123 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx9a8a8b8bf9c085c0",
+	"projectname": "%E7%89%9B%E9%83%8E%E7%BB%87%E5%A5%B3%E9%B9%8A%E6%A1%A5%E4%BC%9A",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "db guide",
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/plaza/index",
+					"pathName": "pages/plaza/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/userDetail/index",
+					"pathName": "pages/userDetail/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": 1007
+				},
+				{
+					"id": -1,
+					"name": "pages/userConsole/userConsole",
+					"pathName": "pages/userConsole/userConsole",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userNeedKnow/index",
+					"pathName": "pages/userNeedKnow/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/report/index",
+					"pathName": "pages/report/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/plazaDetail/index",
+					"pathName": "pages/plazaDetail/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mine/index",
+					"pathName": "pages/mine/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "我的资料",
+					"pathName": "pages/info/index",
+					"query": "uid=7d44a8205dd9f99c0285bd04124ea145",
+					"scene": null
+				}
+			]
+		}
+	}
+}

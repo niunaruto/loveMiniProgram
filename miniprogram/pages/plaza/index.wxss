@@ -1,0 +1,97 @@
+
+.headView {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.headView text {
+  margin-left: 30rpx;
+  font-size: 40rpx;
+  font-family:SFUIDisplay-Bold,SFUIDisplay;
+  font-weight:bold;
+  text-align: center; 
+}
+.listCell{
+    border-bottom: 10rpx solid #f8f8f8;
+}
+.listView {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.listView .userInfoView{
+  height: 120rpx;
+  padding-left: 30rpx;
+  display: flex;
+  position: relative;
+  margin-top: 30rpx;
+}
+.userInfoView .avatar{
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100rpx;
+}
+.userInfoView .nickname{
+  margin-left: 20rpx;
+  color: #B98C6F;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.userInfoView .creatTime{
+  position: absolute;
+  top: 60rpx;
+  left: 150rpx;
+  font-size: 20rpx;
+  color: #666;
+}
+.infoText{
+  font-size: 26rpx;
+  color: #222;
+  padding: 30rpx;
+  padding-top: 0;
+}
+.infoText .topic{
+  color:#4A90E2;
+  font-family:PingFangSC-Regular,PingFang SC;
+}
+.images{
+  display: flex;
+  padding: 30rpx;
+  flex-wrap:wrap;
+  padding-top: 0rpx;
+}
+.images image{
+  height: 223rpx;
+  width: 223rpx;
+  margin-right: 10rpx;
+}
+.ictionBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: flex-end;
+  padding-right: 30rpx;
+  margin-bottom: 10rpx;
+}
+.ictionBar .comment{
+  color: #666;
+  line-height: 50rpx;
+  text-align: center;
+  display: flex;
+  font-size: 25rpx;
+}
+.ictionBar .start{
+  margin-left: 20rpx;
+}
+.comment image{
+  height: 45rpx;
+  width: 45rpx;
+  margin-top: 4rpx;
+}
+.start image{
+  margin-top: 0rpx;
+}

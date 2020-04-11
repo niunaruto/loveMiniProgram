@@ -1,0 +1,24 @@
+<view class="headView" style='height:{{systemInfoObj.statusBarHeight+44}}px'>
+  <text style="margin-top:{{menuRect.top}}px;line-height:{{menuRect.height}}px">鹊桥会</text>
+</view>
+<view class="listView" style="margin-top:{{systemInfoObj.statusBarHeight+44}}px">
+  <view class="titleView">推荐
+  </view>
+  <view class="listCell" catchtap="jumpToDetail" data-data="{{item}}" wx:key="{{item.userId}}" wx:for="{{listData}}">
+    <view class="content">
+      <image lazy-load="" class="icon" src="{{item.avatar.url}}"></image>
+      <view class="infoView">
+        <view class="info">
+          <text class="nickName">{{item.nickname}}</text>
+          <text class="shiMing" wx:if="{{item.realnameAuthStatus=='pass'}}">实名</text>
+        </view>
+        <text class="addressAndAge">{{item.workPlace}} {{item.age}}</text>
+        <text class="introduce">{{item.introduce}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<image catchtap="changeCard" class="changeCard" src="../../images/changeCard.png"></image>
+
+

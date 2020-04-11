@@ -1,0 +1,17 @@
+Page{
+  background-color: white;
+}
+.header{
+  margin: 30rpx;
+  font-size: 26rpx;
+  border:1rpx solid rgba(151,151,151,0.6);
+  border-radius: 20rpx;
+  display: flex;
+  padding-left: 40rpx;
+  padding-bottom: 40rpx;
+  margin-top: 20%;
+  color: #999;
+}
+video{
+  width: 100%;
+}

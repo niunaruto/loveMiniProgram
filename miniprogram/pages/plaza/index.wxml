@@ -1,0 +1,30 @@
+<view class="headView" style='height:{{systemInfoObj.statusBarHeight+44}}px'>
+  <text style="margin-top:{{menuRect.top}}px;line-height:{{menuRect.height}}px">话题广场</text>
+</view>
+<view class="listView" style="margin-top:{{systemInfoObj.statusBarHeight+44}}px">
+  <view class="listCell" catchtap="jumpToDetail" data-item="{{item}}" wx:key="{{item}}" wx:for="{{listData}}">
+    <view class="userInfoView">
+      <image lazy-load="" mode="aspectFill"  class="avatar" src="https://7265-release-8c26ef-1258968381.tcb.qcloud.la/queQiao/kefuIcon.jpeg?sign=a511ab456ab7b72fbefaa484046b57d1&t=1574339224"></image>
+      <text class="nickname">牛郎织女</text>
+      <text class="creatTime">18.11.20</text>
+    </view>
+    <view class="infoText">
+      <text class="topic">#魔都月老牵线#</text>
+      <text>这是一条置顶互粉帖[互粉]，在评论里留下你的资料(性别、年龄、身高、星座、照片，要求…)，看着合适就从互粉开始认识吧～每日打卡效果会更好！图一是脱单秘籍，请仔细阅读；图二是通过月老平台脱单的一对发来的结婚证照💓；图三是星座配对指数表。也许你的缘分就在评论里</text>
+    </view>
+    <view class="images">
+      <image  bindtap="previewImage" lazy-load="" mode="aspectFill" src="cloud://release-8c26ef.7265-release-8c26ef-1258968381/queQiao/xingzuo.jpeg"></image>
+      <image  bindtap="previewImage" lazy-load="" mode="aspectFill" src="cloud://release-8c26ef.7265-release-8c26ef-1258968381/queQiao/jiehunzheng.jpeg"></image>
+    </view>
+    <view class="ictionBar">
+      <view class="comment">
+        <image src="../../images/comment_img.png"></image>
+        <text> 300</text>
+      </view>
+      <view class="comment start">
+        <image src="../../images/comment_start.png"></image>
+        <text>3000</text>
+      </view>
+    </view>
+  </view>
+</view>

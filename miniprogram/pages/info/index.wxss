@@ -1,0 +1,206 @@
+/* pages/userConsole/userConsole.wxss */
+
+.head {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+
+.head .fistIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+  color: #333;
+  margin-top: 70rpx;
+  position: relative;
+}
+
+.fistIcon .logo {
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.fistIcon .changeIcon {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  padding-top: 60rpx;
+  padding-left: 70rpx;
+}
+
+.photos {
+  padding-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.title {
+  font-size: 30rpx;
+  color: #333;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+
+.title text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.photos {
+  width: 690rpx;
+}
+
+.photos .images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.images .img{
+  display: flex;
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  border-radius: 20rpx;
+  background-color: #f1f1f1;
+}
+
+.img .addImageBtn {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -30rpx;
+}
+.img .removeImageBtn {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+}
+.img .photo{
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  z-index: 9;
+}
+
+.baseInfo {
+  border-bottom: 10rpx solid #efefef;
+}
+
+.baseInfo .infoTitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  color: #000;
+  padding: 30rpx;
+}
+
+.infoCell {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding-right: 80rpx;
+  padding-left: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: relative;
+}
+
+.infoCell .left {
+  color: #666;
+}
+
+.infoCell .right {
+  color: #000;
+}
+
+.infoCell .birthday {
+  color: #333;
+}
+
+.infoCell input {
+  height: 100%;
+  text-align: center;
+  width: 500rpx;
+}
+
+.right_gay {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+}
+
+.bottom {
+  margin-bottom: 30rpx;
+}
+
+.tabItemView {
+  padding-bottom: 120rpx;
+}
+
+.tabItemView .item {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 210rpx;
+}
+.tabItemView .itemFix {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+.itemFixCell{
+  display: flex;
+  padding-top: 210rpx;
+
+}
+
+
+.item .item_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50rpx;
+}
+
+.item .left {
+  padding-right: 60rpx;
+}
+
+.item .right {
+  padding-left: 60rpx;
+}
+
+.item_title .line {
+  background-color: red;
+  height: 8rpx;
+  width: 50rpx;
+  margin-top: 15rpx;
+  border-radius: 4rpx;
+}
+
+.item_title text {
+  font-size: 30rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+}
+.item .descMessege{
+  position: absolute;
+  bottom: 20rpx;
+  color: #999;
+  font-size: 25rpx;
+}

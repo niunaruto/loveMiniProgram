@@ -1,0 +1,107 @@
+
+.headView {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.headView text {
+  margin-left: 30rpx;
+  font-size: 40rpx;
+  font-family:SFUIDisplay-Bold,SFUIDisplay;
+  font-weight:bold;
+  text-align: center; 
+}
+.listView {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.listView .titleView{
+  margin-left: 30rpx;
+  font-size: 35rpx;
+  font-family: PingFang SC;
+  height: 40rpx;
+  padding-bottom: 15rpx;
+}
+.listView .imagesRecomm{
+  width: 50rpx;
+  height: 50rpx;
+  /* font-size: 20rpx;
+  font-family: PingFang SC;
+  padding: 0rpx 8rpx 0rpx 8rpx;
+  border-radius: 8rpx;
+  color: white;
+  background:linear-gradient(227deg,rgb(126, 170, 206) 0%,rgb(34, 23, 175) 100%); */
+}
+.listView .listCell .content{
+  display: flex;
+  justify-content: space-between;
+  height: 220rpx;
+  justify-items: center;
+  align-items: center;
+}
+
+.content .icon{
+  height: 200rpx;
+  width: 200rpx;
+  margin-left: 30rpx;
+  border-radius: 15rpx;
+}
+.content .infoView{
+  display: flex;
+  flex-direction: column;
+  width: 520rpx;
+  padding-left: 20rpx;
+}
+.infoView .info{
+  display: flex;
+  align-items: center;
+}
+.infoView .info .nickName{
+  color: #B98C6F;
+  font-size: 30rpx;
+  display: flex;
+  font-family:SFUIDisplay-Bold,SFUIDisplay;
+
+}
+.infoView .info .shiMing{
+  color: white;
+  font-size: 15rpx;
+  margin-left: 15rpx;
+  height: 20rpx;
+  width: 35rpx;
+  text-align: center;
+  border-radius: 5rpx;
+  line-height: 20rpx;
+  background:linear-gradient(227deg,rgb(126, 170, 206) 0%,rgb(34, 23, 175) 100%);
+}
+.infoView .addressAndAge{
+  color: #626262;
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+.infoView .introduce{
+  color: #666;
+  font-size: 25rpx;
+  margin-top: 30rpx;
+  padding-right: 30rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.changeCard{
+  position: fixed;
+  right: 15rpx;
+  bottom: 100rpx;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 10;
+  background-color: white;
+}

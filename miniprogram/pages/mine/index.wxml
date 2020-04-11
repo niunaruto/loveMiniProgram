@@ -1,0 +1,6 @@
+<view class='head'>
+  <image lazy-load="" mode="aspectFill" src="https://7265-release-8c26ef-1258968381.tcb.qcloud.la/queQiao/kefuIcon.jpeg?sign=a511ab456ab7b72fbefaa484046b57d1&t=1574339224"></image>
+</view>
+<view class="listItem" wx:for='{{list}}'>
+  <view catchtap="jumpToDetail" data-item="{{item}}" class="cell">{{item.title}}</view>
+</view>

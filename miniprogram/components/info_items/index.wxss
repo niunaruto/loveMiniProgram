@@ -1,0 +1,42 @@
+.list{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.infoCell {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  padding-right: 80rpx;
+  padding-left: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: relative;
+}
+
+.infoCell .left {
+  color: #666;
+}
+
+.infoCell .right {
+  color: #000;
+}
+
+.infoCell .birthday {
+  color: #333;
+}
+
+.infoCell input {
+  height: 100%;
+  text-align: center;
+  width: 500rpx;
+}
+
+.right_gay {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 20rpx;
+}
